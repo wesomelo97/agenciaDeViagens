@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #e3e3e3;
 }
 
 .interface {
@@ -16,10 +16,22 @@ body {
     margin: 0 auto;
 }
 
+header .btn-contato button, .hero-site button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
 /* ESTILO DO HEADER */
 header {
     width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface {
@@ -44,14 +56,150 @@ header .menu-desktop nav ul li {
 header .menu-desktop nav ul li a {
     color: #fff;
     text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
+
+header .menu-desktop nav ul li a:hover {
+    transform: scale(1.05);
+}
+
 
 header .btn-contato button{
     width: 140px;
     height: 50px;
-    font-size: 18px;
-    background-color: transparent;
-    border: 1px solid #fff;
+}
+
+header .btn-contato button:hover, .hero-site button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ESTILO DO HERO */
+section.hero-site {
+    height: 98vh;
+    background-image: url(../images/bg-inicio-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #fff;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* ESTILO DE VANTAGENS */
+section.vantagens {
+    padding: 80px 0;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img {
+    max-width: 480px;
+}
+
+.vantagens .itens-container .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.vantagens .itens-container .txt-itens h3 span {
+    font-weight: 300;
+}
+
+/* ESTILO DE CONTATO */
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.contato .txt-contato h3 span p {
+    font-size: 20px;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto ;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #000;
     cursor: pointer;
+    transition: .5s;
+}
+
+.contato .icons-contato button i {
+    font-size: 20px;
+}
+
+.contato .icons-contato button:hover {
+    background-color: #000;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p {
+    color: #fff;
 }
