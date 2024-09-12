@@ -6,13 +6,15 @@
     <title>Home - bem vindo!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
     
-    <header> <!--Logo, menu, btn contato-->
+    <header id="header"> <!--Logo, menu, btn contato-->
         <div class="interface">
             <section class="logo">
-                <img src="images/logotipo.png" alt="logotipo do site">
+                <img class="logo-b" src="images/logotipo.png" alt="logotipo do site">
+                <img class="logo-p" src="images/logotipo_p.png" alt="logotipo do site">
             </section> <!--FIM LOGO-->
             <section class="menu-desktop">
                 <nav>
@@ -104,6 +106,82 @@
         </div>
         <div class="overlay"></div>
     </section> <!--FIM HOTEIS-->
+    <section class="como-funciona">
+        <div class="interface">
+            <div class="txt-funciona">
+                <h3>Como <span>funciona?</span></h3>
+            </div>
+            <div class="instrucoes">
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="images/atendimento-ao-cliente.png" alt="atendimento ao cliente">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Você <span>fala com a gente</span></h4>
+                        <p>Você entre em contato com a gente fornecendo insformações sobre o seu destino, hospedagem, orçamento e data.</p>
+                    </div>
+                </article>
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="images/planejamento.png" alt="planejamento">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>A gente <span>planeja</span></h4>
+                        <p>Com base nas suas informações, a gente planeja uma viagem que caiba no seu bolso e com o melhor conforto possível.</p>
+                    </div>
+                </article>
+                <article class="instru-box">
+                    <div class="img-instru-box">
+                        <img src="images/viagem.png" alt="atendimento ao cliente">
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Partiu <span>viajar</span></h4>
+                        <p>agora é só fazer as malas e cair na estrada na data acordada. Não esqueça de tirar fotos e nos mandar para eternizar suas memórias</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> <!--FIM COMO FUNCIONA-->
+    <section class="contato">
+        <div class="interface">
+            <article class="txt-contato">
+                <h3>fale agora com a <span>nossa equipe</span></h3>
+                <p>E solicite um orcamento que cabe no seu bolso</p>
+            </article>
+            <article class="icons-contato">
+                <a href="#">
+                    <button><i class="bi bi-whatsapp"></i> <p>Chamar no whatsapp</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-envelope-at-fill"></i> <p>Enviar e-mail</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-telephone-fill"></i> <p>Ligar</p></button>
+                </a>
+                <a href="#">
+                    <button><i class="bi bi-ui-checks"></i> <p>Formulário</p></button>
+                </a>
+            </article>
+
+        </div>
+    </section> <!--FIM CONTATO-->
+    <footer>
+        <div class="interface">
+            <section class="top-footer">
+                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+                <a href="#"><button><i class="bi bi-tiktok"></i></button></a>
+            </section>
+            <section class="middle-footer">
+                <a href="">Suporte</a>
+                <a href="">Informações</a>
+                <a href="">Marketing</a>
+            </section>
+            <section class="botton-footer">
+                <p>Wesomelo Studios &copy; 2024 Todos os direitos reservados</p>
+            </section>
+        </div>
+    </footer>
 
 </body>
 </html>
